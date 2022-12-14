@@ -38,21 +38,29 @@
 :root {
     --color-blue: hsl(257, 40%, 49%);
     --color-magenta: hsl(300, 69%, 71%);
-    --padding: 3rem;
+    --padding: 2rem;
 }
 
 html {
     background-color: var(--color-blue);
     background-image: url(images/bg-mobile.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     color: white;
     text-align: center;
 
 }
 
+body {
+    font-family: "Open Sans";
+    padding: var(--padding);
+}
+
+
 .logo {
     float: left;
+    width: 40%;
+    margin-bottom: 4rem;
 }
 
 .logo::after {
@@ -64,22 +72,51 @@ html {
 h1 {
     font-family: "Poppins";
     font-weight: 600;
+    font-size: 1.8rem;
 
 
 }
 
-body {
-    font-family: "Open Sans";
-    padding: var(--padding);
-}
 
 img {
     margin-bottom: var(--padding);
+    width: 100%;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: var(--padding);
+}
+
+a {
+    display: inline-block;
+    background: #fff;
+    padding: .5em 4em;
+    border-radius: 2em;
+    text-decoration: none;
+
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer li {
+    padding: .5rem;
+    background-color: transparent;
+    list-style-type: none;
+}
+
+footer a {
+    padding: 0;
 }
 
 .attribution {
     font-size: 11px;
     text-align: center;
+
 }
 
 .attribution a {
